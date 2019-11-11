@@ -8,7 +8,7 @@ console.log(mean);
 
 //Задача 2
 let myName = "Natalya";
-let message = ("Привет, мир! Меня зовут " + myName)
+let message = (`Привет, мир! Меня зовут ${myName}`)
 console.log(message);
 
 //Задача 3
