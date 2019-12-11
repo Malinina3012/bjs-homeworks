@@ -9,8 +9,18 @@ function calculateQuadraticEquation(){
 }
 
 function getResult(a,b,c){
-    // код для задачи №1 писать здесь
-    //return x;
+    let discr = Math.pow(b, 2) - 4 * a * c; 
+   let result = [];
+   console.log(discr)// код для задачи №1 писать здесь
+   if (discr > 0) {
+   result[0] = (-b + Math.sqrt(discr)) / 2 * a;
+   result[1] = (-b - Math.sqrt(discr)) / 2 * a;
+  } else if (discr == 0) {
+  result[0] = (-b + Math.sqrt(discr)) / 2 * a;
+  } else if (discr < 0) {
+  result[0] = "нет корней"    
+  }
+  return result
 }
 
 function calculateAverageRating(){
